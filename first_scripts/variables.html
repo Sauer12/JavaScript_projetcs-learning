@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in JavaScript</title>
+</head>
+<body>
+    <script>
+        let a = 10;
+        let b = 20;
+        let result = a + b;
+        document.write("The result of a and b added together: ")
+        document.write(result)
+        document.write("<br />")
+        let firstName = "Charles";
+        let lastName = " Brown";
+        let person = firstName + lastName;
+        document.write("The result of strings firstName and lastName added together: ");
+        document.write(person);
+        
+        let date = new Date();
+        document.write("The Date is: " + date.getDate() + ". " + (date.getMonth() + 1) + ". " + date.getFullYear());
+        document.write("<br />");
+        document.write("The Time is: " + date.getHours() + ":" + date.getMinutes());
+        document.write("<br />");
+        document.write(`${a} + ${b} = ${result}`)
+    </script>
+</body>
+</html>
