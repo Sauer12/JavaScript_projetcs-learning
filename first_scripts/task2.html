@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let symbol = prompt("Enter a smile:")
+        let emotion;
+        switch(symbol){
+            case ":-)":
+                emotion = "Happy!";
+                break;
+            case ":-(":
+                emotion = "Sad!";
+                break;
+            case ":-*":
+                emotion = "Cmuq!";
+                break;
+            case ":-P":
+                emotion = "Haha!";
+                break;
+            default:
+                emotion = "Emotion is not in the list/invalid input.";
+                break;
+        }
+
+        document.write(emotion)
+    </script>
+</body>
+</html>

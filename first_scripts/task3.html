@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Kvadratická rovnica - riešenie</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Získanie koeficientov od používateľa
+        let a = parseFloat(prompt("Zadajte koeficient a:"));
+        let b = parseFloat(prompt("Zadajte koeficient b:"));
+        let c = parseFloat(prompt("Zadajte koeficient c:"));
+
+        // Výpočet diskriminantu
+        let D = b * b - 4 * a * c;
+
+        if (a === 0) {
+            document.write("Toto nie je kvadratická rovnica (a nesmie byť 0).");
+        } else if (D > 0) {
+            let x1 = (-b + Math.sqrt(D)) / (2 * a);
+            let x2 = (-b - Math.sqrt(D)) / (2 * a);
+            document.write("Rovnica má dva reálne korene: x₁ = " + x1 + ", x₂ = " + x2);
+        } else if (D === 0) {
+            let x = -b / (2 * a);
+            document.write("Rovnica má jeden reálny koreň: x = " + x);
+        } else {
+            document.write("Rovnica nemá reálne korene.");
+        }
+    </script>
+</body>
+</html>

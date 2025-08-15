@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+</head>
+<body>
+    <script>
+        let currentTime = new Date();
+        let currentHour = currentTime.getHours();
+        let greeting;
+
+        switch (true) {
+            case (currentHour >= 5 && currentHour <= 11):
+                greeting = "Good morning";
+                break;
+            case (currentHour >= 12 && currentHour <= 17):
+                greeting = "Good afternoon";
+                break;
+            case (currentHour >= 18 && currentHour <= 21):
+                greeting = "Good evening";
+                break;
+            default:
+                greeting = "Good night";
+        }
+
+        document.write(greeting);
+    </script>
+</body>
+</html>

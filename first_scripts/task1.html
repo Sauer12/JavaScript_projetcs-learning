@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+</head>
+<body>
+    <script>
+        let name = prompt("Enter a name:");
+        let name_length = name.length;
+        if ((name_length >= 3) && (name_length <= 10)){
+            document.write("You have a normal name!")
+        } else if (name_length < 3){ 
+            document.write("Your name is very short!")
+        } else{
+            document.write("Your name is very long!")
+        }
+    </script>
+</body>
+</html>
